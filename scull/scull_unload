@@ -3,7 +3,7 @@ module="scull"
 device="scull"
 
 # invoke rmmod with all arguments we got
-rmmod $module $* || exit 1
+rmmod /usr/bin/$module $* || exit 1
 
 # Remove stale nodes
 
